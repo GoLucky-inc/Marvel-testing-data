@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: super-hero-llc
+    schema: raw_data
+    tables:
+      - name: all_data
+        description: "Raw all_data table from BigQuery containing campaign performance data"
+        columns:
+          - name: string_field_0
+            description: "Date of the campaign record"
+          - name: string_field_1
+            description: "Campaign name"
+          - name: string_field_2
+            description: "Spend amount"
+          - name: string_field_3
+            description: "Number of impressions"
+          - name: string_field_4
+            description: "Number of clicks"
