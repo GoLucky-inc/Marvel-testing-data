@@ -1,6 +1,6 @@
 with source as (
 
-    select * from {{ source('raw_data', 'all_data') }}
+    select * from {{ source('raw_data', 'paid_social_native') }}
 
 ),
 

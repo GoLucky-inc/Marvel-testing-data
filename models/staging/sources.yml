@@ -5,8 +5,8 @@ sources:
     database: super-hero-llc
     schema: raw_data
     tables:
-      - name: all_data
-        description: "Raw all_data table from BigQuery containing campaign performance data"
+      - name: paid_social_native
+        description: "Native BigQuery copy of the all_data Google Sheet — campaign performance data"
         columns:
           - name: string_field_0
             description: "Date of the campaign record"
@@ -17,4 +17,18 @@ sources:
           - name: string_field_3
             description: "Number of impressions"
           - name: string_field_4
+            description: "Number of clicks"
+
+      - name: paid_search_native
+        description: "Paid search data from Google Sheets"
+        columns:
+          - name: date
+            description: "Date of the campaign record"
+          - name: campaign_name
+            description: "Campaign name"
+          - name: spend
+            description: "Spend amount"
+          - name: impressions
+            description: "Number of impressions"
+          - name: clicks
             description: "Number of clicks"
