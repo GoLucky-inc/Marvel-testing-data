@@ -7,7 +7,7 @@ with source as (
 renamed as (
 
     select
-        date,
+        PARSE_DATE('%m/%d/%Y', date) as date,
         campaign_name,
         spend,
         impressions,
